@@ -33,4 +33,9 @@ https://la-cascade.io/svg-la-syntaxe-path/
 
 	<path class="fig2" d="M 300,300 L 300,600 L 600,600  L 600,300 z"/>
 
+	<!--
+		<script> alert('Boom !'); </script>
+	-->
 </svg>
+
+

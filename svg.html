@@ -6,30 +6,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Premier svg</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<style type="text/css" media="screen">
-			.premier_svg object{
-				background-color: blue;
-			}
-
-			.premier_svg .fig1{
-				stroke: red;
-				stroke-width: 10;
-				fill: blue;
-			}
-
-			.svg_bis svg{
-				background-color: green;
-			}
-			.svg_bis svg .fig1{
-				stroke: red;
-				stroke-width: 10;
-				fill: blue;
-			}
-		</style>
 	</head>
 
 	<body>
+
+		<!--
+			SVG en OBJET
+		-->
 		<div class="premier_svg">
+			<style type="text/css" media="screen">
+				.premier_svg object{
+					background-color: blue;
+				}
+
+				.premier_svg .fig1{
+					stroke: red;
+					stroke-width: 10;
+					fill: blue;
+				}
+			</style>
+
 			<object
 				data="dessin.svg"
 				type="image/svg+xml"
@@ -39,17 +35,26 @@
 			</object>
 		</div>
 
-
 		<hr>
 
-
 		<div class="svg_bis">
+			<style type="text/css" media="screen">
+				.svg_bis svg{
+					background-color: green;
+				}
+				.svg_bis svg .fig1{
+					stroke: red;
+					stroke-width: 10;
+					fill: blue;
+				}
+			</style>
 
 			<svg xml:lang="fr"
 				viewBox="120 120 500 500"
 				xmlns="http://www.w3.org/2000/svg"
 				xmlns:xlink="http://www.w3.org/1999/xlink"
 				width="600px"
+				id="toto"
 				>
 
 				<style type="text/css">
@@ -62,22 +67,14 @@
 						fill:blue;
 						stroke-width:18;
 						stroke-linejoin:round;
-						<!--stroke-linejoin:bevel;-->
 					}
 				</style>
 
 				<title>Les commandes Moveto et Lineto des paths SVG</title>
-
 				<path class="fig1" d="M 120,200 L 140,120 L 180,280 L 220,120 L 260,280 L 300,120"/>
-
 				<path class="fig2" d="M 300,300 L 300,600 L 600,600  L 600,300 z"/>
-
 			</svg>
-
 		</div>
-
 	</body>
 
 </html>
-
-
