@@ -1,0 +1,17 @@
+.koala:hover{
+    fill:blue;
+    transform: scale(1.5);
+}
+
+.koala{
+    transition:.5s;
+}
+
+.icecream:hover{
+    fill:blue;
+    transform: translate(20px);
+}
+
+.icecream{
+    transition:.5s;
+}
